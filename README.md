@@ -4,6 +4,9 @@
 
 A simple, interactive password generator built with HTML, CSS, and JavaScript. Users can generate a random password, see it displayed in a box, and copy it to the clipboard by clicking the box. The interface includes dynamic styling, cursor changes, and subtle animations for enhanced user experience.
 
+## Live link
+https://buildinrythm.github.io/random-password-generator/ 
+
 ## Screenshot
 ![alt text](screenshot.jpeg)
 
