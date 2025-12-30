@@ -77,3 +77,43 @@ border-style: solid;
     color: #4ADF86;
 }
 
+
+@media (max-width: 600px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    #container {
+        width: 90%;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    #mainContent {
+        margin: 40px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+
+    #generatePassword {
+        width: 100%;
+    }
+
+    #password-boxes {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .passwordBox {
+        width: 100%;
+    }
+}
