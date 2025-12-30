@@ -8,13 +8,29 @@ body {
 
 h1{
     font-size: 40px;
-    color: white
+    color: white;
+}
+
+#mainContent{
+    margin: 80px 50px;
+}
+
+p{
+    color: white;
+}
+
+#generatePassword{
+    color: white;
+    border-radius: 30px;
+    width: 191px;
+    height: 42px;
+    background: #4ADF86;
+
 }
 #container {
     height: 550px;
     width: 550px;
     background: #1F2937;
-    padding: 10px 20px;
 }
 
 #password-boxes {
