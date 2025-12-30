@@ -4,6 +4,9 @@
 
 A simple, interactive password generator built with HTML, CSS, and JavaScript. Users can generate a random password, see it displayed in a box, and copy it to the clipboard by clicking the box. The interface includes dynamic styling, cursor changes, and subtle animations for enhanced user experience.
 
+## Screenshot
+![alt text](screenshot.jpeg)
+
 ## Features
 
 Generate random passwords of 13 characters
@@ -33,8 +36,7 @@ Click on the password box to copy the password to your clipboard (cursor changes
 
 Enjoy dynamically styled and animated password generation.
 
-## Screenshot
-![alt text](screenshot.jpeg)
+
 
 Learnings & Development Process
 
