@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black
+}
+
+h1{
+    font-size: 40px;
+    color: white
+}
+#container {
+    height: 550px;
+    width: 550px;
+    background: #1F2937;
+    padding: 10px 20px;
+}
+
+#password-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.highlight {
+    color: #4ADF86;
+}
