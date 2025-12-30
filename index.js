@@ -28,11 +28,19 @@ function generatePassword(){
 function renderPassword(){
 password1.textContent = generatePassword()
 password2.textContent = generatePassword()
+
+// Update cursor pointer
+
 password1.style.cursor = "pointer";
 password2.style.cursor = "pointer";
+
+// Animate boxes
+    animatePassword(password1);
+    animatePassword(password2);
 isGenerated = true;
 }
 
+//Block clicks when password isnt generated
 password1.addEventListener("click", () => {
     if (isGenerated === true){
     const text = password1.innerText;
@@ -47,6 +55,7 @@ password1.addEventListener("click", () => {
     }
 });
 
+//Block clicks when password isnt generated
 password2.addEventListener("click", () => {
     if (isGenerated === true){
     const text = password2.innerText;
@@ -60,3 +69,15 @@ password2.addEventListener("click", () => {
         });
     }
 });
+
+//function to animate password box
+function animatePassword(box) {
+    // Remove the class if it’s already there (to allow re-trigger)
+    box.classList.remove("pop-animation");
+
+    // Trigger reflow so the animation can restart
+    void box.offsetWidth;
+
+    // Add the class to start animation
+    box.classList.add("pop-animation");
+}
