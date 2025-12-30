@@ -77,12 +77,3 @@ border-style: solid;
     color: #4ADF86;
 }
 
-@keyframes pop {
-  0%   { transform: scale(0.8); opacity: 0.5; }
-  50%  { transform: scale(1.1); opacity: 1; }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-.pop-animation {
-  animation: pop 0.3s ease;
-}
