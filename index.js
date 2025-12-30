@@ -4,7 +4,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 //Grab password locations
 let password1 = document.querySelector(".box1");
 let password2 = document.querySelector(".box2");
-
+let isGenerated = false;
 
 
 //Function to get a random char
@@ -28,9 +28,13 @@ function generatePassword(){
 function renderPassword(){
 password1.textContent = generatePassword()
 password2.textContent = generatePassword()
+password1.style.cursor = "pointer";
+password2.style.cursor = "pointer";
+isGenerated = true;
 }
 
 password1.addEventListener("click", () => {
+    if (isGenerated === true){
     const text = password1.innerText;
 
     navigator.clipboard.writeText(text)
@@ -40,9 +44,11 @@ password1.addEventListener("click", () => {
         .catch(err => {
             console.error("Failed to copy:", err);
         });
+    }
 });
 
 password2.addEventListener("click", () => {
+    if (isGenerated === true){
     const text = password2.innerText;
 
     navigator.clipboard.writeText(text)
@@ -52,4 +58,5 @@ password2.addEventListener("click", () => {
         .catch(err => {
             alert("Failed to copy:", err);
         });
+    }
 });
