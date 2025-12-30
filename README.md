@@ -38,7 +38,7 @@ Enjoy dynamically styled and animated password generation.
 
 
 
-Learnings & Development Process
+## Learnings & Development Process
 
 Planning Logic: Sketched the steps on paper before coding to clarify the workflow.
 
