@@ -9,9 +9,7 @@ let password2 = document.querySelector(".box2");
 
 //Function to get a random char
 function genRandomChar() {
-let getRandomChar = Math.floor(Math.random() * characters.length);
-let randomChar = characters[getRandomChar];
-return randomChar
+return characters[Math.floor(Math.random() * characters.length)]
 }
 
 //Function to put charachters together into a string
@@ -27,9 +25,31 @@ function generatePassword(){
 }
 
 //Function to append the password to the div
-function appendPassword(){
+function renderPassword(){
 password1.textContent = generatePassword()
 password2.textContent = generatePassword()
 }
 
+password1.addEventListener("click", () => {
+    const text = password1.innerText;
 
+    navigator.clipboard.writeText(text)
+        .then(() => {
+            alert("Password copied to clipboard");
+        })
+        .catch(err => {
+            console.error("Failed to copy:", err);
+        });
+});
+
+password2.addEventListener("click", () => {
+    const text = password2.innerText;
+
+    navigator.clipboard.writeText(text)
+        .then(() => {
+            alert("Password copied to clipboard");
+        })
+        .catch(err => {
+            alert("Failed to copy:", err);
+        });
+});
