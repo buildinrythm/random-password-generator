@@ -16,7 +16,7 @@ return characters[Math.floor(Math.random() * characters.length)]
 function generatePassword(){
     let password = []
 
-    for(let i = 0; i < 13; i++){
+    for(let i = 0; i < 16; i++){
         password.push(genRandomChar())
     }
 
